@@ -1,4 +1,4 @@
-# pacote-desafios-pythonicos
-Pacote Desafios Pythônicos
+# desafios-pythonicos
+Desafios Pythônicos
 
-Exercícios do curso do amigo Henrique Bastos
+1 - Exercícios do curso do amigo Henrique Bastos
