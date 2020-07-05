@@ -7,6 +7,7 @@ modificar as listas recebidas.
 
 A sua solução deve rodar em tempo linear, ou seja, deve fazer uma
 única passagem em cada uma das listas.
+
 """
 
 def linear_merge(list1, list2):
@@ -20,6 +21,7 @@ def test(f, in_, expected):
     """
     Executa a função f com o parâmetro in_ e compara o resultado com expected.
     :return: Exibe uma mensagem indicando se a função f está correta ou não.
+    
     """
     out = f(*in_)
 
