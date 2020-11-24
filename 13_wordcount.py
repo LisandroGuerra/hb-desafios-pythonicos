@@ -1,3 +1,5 @@
+# coding: utf-8
+
 """
 13. wordcount
 
@@ -56,7 +58,17 @@ import sys
 # Defina as funções print_words(filename) e print_top(filename).
 
 def print_words(filename):
-    pass
+    with open(filename) as file:
+        text = file.read().lower().split()
+    words_dict = {}
+    for word in text:
+        if word in words_dict:
+            words_dict[word] += 1
+        else:
+            words_dict[word] = 1
+    for word, freq in sorted(words_dict.items()):
+        print(word, freq)
+
 
 
 def print_top(filename):
