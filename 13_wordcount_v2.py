@@ -59,8 +59,8 @@ import sys
 
 def get_word_list(filename):
     with open(filename) as file:
-        text = file.read().lower().split()
-    return text
+        words_list = file.read().lower().split()
+    return words_list
 
 
 def get_freq_dict(words_list):
