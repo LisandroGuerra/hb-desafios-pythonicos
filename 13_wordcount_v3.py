@@ -62,12 +62,13 @@ import re
 def get_word_list(filename):
     with open(filename) as file:
         punctuation = string.punctuation
-        words_list = file.read().lower().split()
+        words_list = file.read().lower()
+        table = words_list.maketrans('', '', punctuation)
+        words_list = words_list.translate(table).split()
         for word in words_list:
             if len(word) < 3:
                 words_list.remove(word)
-        # table = words_list.maketrans('', '', punctuation)
-        # words_list = words_list.translate(table).split()
+
     return words_list
 
 
