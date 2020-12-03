@@ -55,12 +55,19 @@ e conferindo cada etapa do seu progresso.
 
 import sys
 import string
+import re
 # +++ SUA SOLUÇÃO +++
 
 
 def get_word_list(filename):
     with open(filename) as file:
-        words_list = file.read().lower().
+        punctuation = string.punctuation
+        words_list = file.read().lower().split()
+        for word in words_list:
+            if len(word) < 3:
+                words_list.remove(word)
+        # table = words_list.maketrans('', '', punctuation)
+        # words_list = words_list.translate(table).split()
     return words_list
 
 
