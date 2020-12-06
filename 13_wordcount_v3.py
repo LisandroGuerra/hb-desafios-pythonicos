@@ -1,5 +1,4 @@
 # coding: utf-8
-
 """
 13. wordcount
 
@@ -55,10 +54,9 @@ e conferindo cada etapa do seu progresso.
 
 import sys
 import string
-import re
+
+
 # +++ SUA SOLUÇÃO +++
-
-
 def get_word_list(filename):
     with open(filename) as file:
         punctuation = string.punctuation
@@ -68,7 +66,6 @@ def get_word_list(filename):
         for word in words_list:
             if len(word) < 3:
                 words_list.remove(word)
-
     return words_list
 
 
@@ -83,7 +80,6 @@ def get_freq_dict(words_list):
 
 
 # Defina as funções print_words(filename) e print_top(filename).
-
 def print_words(filename):
     words_list = get_word_list(filename)
     words_dict = get_freq_dict(words_list)
@@ -110,7 +106,7 @@ def print_top(filename):
 # parêtros do programa.
 def main():
     if len(sys.argv) != 3:
-        print('Utilização: ./13_wordcount.py {--count | --topcount} file')
+        print('Utilização: ./13_wordcount_v3.py {--count | --topcount} file')
         sys.exit(1)
 
     option = sys.argv[1]
