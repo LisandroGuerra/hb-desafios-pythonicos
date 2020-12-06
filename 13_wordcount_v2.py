@@ -101,7 +101,7 @@ def print_top(filename):
 # parêtros do programa.
 def main():
     if len(sys.argv) != 3:
-        print('Utilização: ./13_wordcount.py {--count | --topcount} file')
+        print('Utilização: ./13_wordcount_v2.py {--count | --topcount} file')
         sys.exit(1)
 
     option = sys.argv[1]
