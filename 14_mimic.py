@@ -1,3 +1,4 @@
+
 """
 14. mimic
 
@@ -41,12 +42,23 @@ método que escolhe um elemento aleatório de uma lista não vazia.
 
 import random
 import sys
+import string
 
 
 def mimic_dict(filename):
   """Retorna o dicionario imitador mapeando cada palavra para a lista de
   palavras subsequentes."""
     # +++ SUA SOLUÇÃO +++
+  with open(filename) as file:
+    punctuation = string.punctuation
+    words_list = file.read().lower()
+    table = words_list.maketrans('', '', punctuation)
+    words_list = words_list.translate(table).split()
+
+  mimic_dic = {}
+  #for word in words_list:
+
+
   return
 
 
