@@ -56,10 +56,13 @@ def mimic_dict(filename):
     words_list = words_list.translate(table).split()
 
   mimic_dic = {}
-  #for word in words_list:
+  mimic_dic[words_list[0]] = ['', words_list[1]]
+  mimic_dic[words_list[-1]] = ['', words_list[-2]]
+  for index, word in enumerate(words_list):
+    if word not in mimic_dic:
+      mimic_dic[word] = [words_list[index - 1], words_list[index + 1]]
 
-
-  return
+  return print(mimic_dic)
 
 
 def print_mimic(mimic_dict, word):
