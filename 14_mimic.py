@@ -62,7 +62,7 @@ def mimic_dict(filename):
     if word not in mimic_dic:
       mimic_dic[word] = [words_list[index - 1], words_list[index + 1]]
 
-  return print(mimic_dic)
+  return mimic_dic
 
 
 def print_mimic(mimic_dict, word):
