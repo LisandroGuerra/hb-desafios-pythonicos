@@ -68,6 +68,7 @@ def mimic_dict(filename):
 def print_mimic(mimic_dict, word):
   """Dado o dicionario imitador e a palavra inicial, imprime texto de 200 palavras."""
     # +++ SUA SOLUÇÃO +++
+    # +++ Falta este +++
   return
 
 
