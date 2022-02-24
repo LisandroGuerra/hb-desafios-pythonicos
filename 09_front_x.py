@@ -21,8 +21,6 @@ antes de combina-las.
 #             lista_o.append(word)
 #     return sorted(lista_x) + sorted(lista_o)
 
-from operator import itemgetter
-
 def front_x(words):
     return sorted(words, key=lambda w: w.replace('x', '0', 1))
 
